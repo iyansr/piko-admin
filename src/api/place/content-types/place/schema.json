@@ -31,12 +31,6 @@
     "rating": {
       "type": "decimal"
     },
-    "menus": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::menu.menu",
-      "mappedBy": "place"
-    },
     "slug": {
       "type": "uid",
       "targetField": "name"
@@ -50,11 +44,18 @@
       "required": true
     },
     "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "menus": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu.menu",
+      "mappedBy": "place"
     }
   }
 }
