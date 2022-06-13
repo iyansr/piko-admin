@@ -56,6 +56,16 @@
       "relation": "oneToMany",
       "target": "api::menu.menu",
       "mappedBy": "place"
+    },
+    "facilities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::facility.facility",
+      "mappedBy": "place"
+    },
+    "address": {
+      "type": "string",
+      "required": true
     }
   }
 }
