@@ -37,11 +37,11 @@
     },
     "lat": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "lng": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "gallery": {
       "type": "media",
