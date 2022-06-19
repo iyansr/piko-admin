@@ -66,6 +66,14 @@
     "address": {
       "type": "string",
       "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 1
+    },
+    "distance": {
+      "type": "decimal",
+      "default": 1.1
     }
   }
 }
